@@ -616,7 +616,7 @@ color:#ff557f;
       <rect>
        <x>320</x>
        <y>680</y>
-       <width>91</width>
+       <width>101</width>
        <height>22</height>
       </rect>
      </property>
@@ -627,7 +627,7 @@ color:#ff557f;
      </item>
      <item>
       <property name="text">
-       <string>开关与编码信号</string>
+       <string>开关与伺服信号</string>
       </property>
      </item>
     </widget>

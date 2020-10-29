@@ -93,6 +93,60 @@ void MainWindow::InitUi()
         {
             this->ui->comboBox_5->setCurrentIndex(1);
         }
+
+        if (_motor[_axisChannel].LimitSignalIsValid() == MotorComponent::LILMIT_SIGNAL_FLAG::SIGNAL_VALID)
+        {
+            this->ui->comboBox_6->setCurrentIndex(0);
+        }
+        else
+        {
+            this->ui->comboBox_6->setCurrentIndex(1);
+        }
+
+        if (_motor[_axisChannel].PositionTriggerIsValid() == MotorComponent::POSITION_TRIGGER_FLAG::SIGNAL_VALID)
+        {
+            this->ui->comboBox_7->setCurrentIndex(0);
+        }
+        else
+        {
+            this->ui->comboBox_7->setCurrentIndex(1);
+        }
+
+        if (_motor[_axisChannel].OriginSignalMode() == MotorComponent::ORIGIN_SIGNAL_MODE::HIGH_LEVEL)
+        {
+            this->ui->comboBox_8->setCurrentIndex(0);
+        }
+        else
+        {
+            this->ui->comboBox_8->setCurrentIndex(1);
+        }
+
+        if (_motor[_axisChannel].DecelerationSignalMode() == MotorComponent::DECELERATION_SIGNAL_MODE::HIGH_LEVEL)
+        {
+            this->ui->comboBox_9->setCurrentIndex(0);
+        }
+        else
+        {
+            this->ui->comboBox_9->setCurrentIndex(1);
+        }
+
+        if (_motor[_axisChannel].LimitSignalMode() == MotorComponent::LIMIT_SIGNAL_MODE::HIGH_LEVEL)
+        {
+            this->ui->comboBox_10->setCurrentIndex(0);
+        }
+        else
+        {
+            this->ui->comboBox_10->setCurrentIndex(1);
+        }
+
+        if (_motor[_axisChannel].AlarmSignalMode() == MotorComponent::ALARM_SIGNAL_MODE::HIGH_LEVEL)
+        {
+            this->ui->comboBox_11->setCurrentIndex(0);
+        }
+        else
+        {
+            this->ui->comboBox_11->setCurrentIndex(1);
+        }
     }
 }
 
